@@ -1,0 +1,16 @@
+extends ../Layout_Users.pug
+block content
+    h2 Modificar Usuario
+    form(action='/users/update', method='POST')
+        center
+            div(class='form-group')
+                label(for='Nombre') Nombre: 
+                input(type='text', name='Nombre', id='Nombre', class='form-control texto' required)
+            div(class='form-group')
+                label(for='Email') Email: 
+                input(type='text', name='Email', id='Email', class='form-control texto' required) 
+            div(class='form-group')
+                label(for='Password') Contraseña: 
+                input(type='password', name='Password', id='Password', class='form-control texto' required)
+            div
+                input(type='submit', value='Actualizar', class='btn btn-warning')

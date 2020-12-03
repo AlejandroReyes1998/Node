@@ -1,0 +1,12 @@
+extends ./Layout_Index.pug
+block content
+    h2 Inicio de Sesión
+        center
+            div(class='form-group')
+                label(for='Email') Email: 
+                input(type='text', name='Email', id='Email', class='form-control texto')
+            div(class='form-group')
+                label(for='Password') Contraseña: 
+                input(type='password', name='Password', id='Password', class='form-control texto')
+            div
+                input(type='button', value='Entrar', onclick='login();',class='btn btn-danger')
